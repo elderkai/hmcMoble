@@ -1,0 +1,142 @@
+.newLists .title{
+font-size: .85rem;
+font-family: PingFang SC;
+font-weight: 800;
+color: #000000;
+margin-bottom: 1rem;
+}
+.newsItem{
+    width: 17.425rem;
+    height:.625rem;
+    font-size: .65rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    border-bottom:1px solid #E6E6E6 ;
+    height: 1.4rem;
+    margin-left:.8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: .6rem;
+}
+.van-pagination__item:active{
+
+    background-color:#67C757;
+    color: #fff;
+}
+.van-pagination__item--active{
+    background-color:#67C757;
+    color: #fff!important;
+}
+.van-pagination__item{
+    color:#555555;
+}
+.van-pagination{
+    margin: 1.2rem 0;
+}
+.van-pagination__item{
+    border:1px solid #ddd;
+}
+.dragBoxS {
+    position: fixed;
+    top: 75%;
+    z-index: 999;
+    left: 75%;
+    width: 3.75rem;
+    height: 3.5rem;
+  }
+
+
+.newsDetail .title{
+    
+    font-size: .8rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #333333;
+    line-height: 1.2rem;
+    margin-top: 1.3rem;
+    
+}
+
+
+.newsDetail .text{
+font-size: .65rem;
+font-family: PingFang SC;
+font-weight: 500;
+color: #555555;
+line-height: 1.15rem;
+
+}
+.newsDetail P{
+    font-size: .6rem;
+    font-family: PingFang SC;
+font-weight: 500;
+color: #999999;
+margin-top:.9rem;
+text-indent: 2em;
+}
+.newsDetail P .from{
+    margin-left:2.4rem;
+}
+.newsDetail .text-title{
+    color:#555555;
+    font-size: .75rem;
+    font-weight: Heavy;
+    margin-top: 1.45rem;
+}
+.newsDetail .back{
+    font-size: .6rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #999999;
+    
+}
+.newsDetail a:active{
+color: #57BD46;
+}
+
+.newsDetail .active{
+    color: #57BD46;
+}
+.hrBox{
+    width: 100%;
+    height: .65rem;
+    background: #f7f7f7;
+    margin-top: 1.65rem;
+}
+.consult{
+    padding:0 .8rem;
+}
+.consult .consult_title  .title{
+    font-size: .75rem;
+    font-family: PingFang SC;
+font-weight: 800;
+color: #000000;
+
+}
+.consult .consult_title {
+    display: flex;
+    justify-content: space-between;
+}
+.consult .consult_title  .btn_more{
+font-size: .6rem;
+font-family: PingFang SC;
+font-weight: 500;
+color: #999999;
+
+}
+.btn_back{
+    width: 4.325rem;
+    height: 1.3rem;
+    border:1px solid #57BD46;
+    border-radius: 5px;
+    line-height: 1.3rem;
+    font-size: .6rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #57BD46;
+    text-align: center;
+    margin:1.65rem auto 1.8rem;
+
+}

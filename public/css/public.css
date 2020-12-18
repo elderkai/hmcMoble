@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*
+
+/** 清除内外边距 **/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+/* structural elements 结构元素 */
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+/* list elements 列表元素 */
+pre,
+/* text formatting elements 文本格式元素 */
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+/* form elements 表单元素 */
+th,
+td
+
+/* table elements 表格元素 */
+    {
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button,
+input,
+select,
+textarea
+
+/* for ie */
+    {
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+}
+img{ background-repeat:no-repeat;    
+    background-size:cover;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+
+/* 将斜体扶正 */
+code,
+kbd,
+pre,
+samp {
+    font-family: courier new, courier, monospace;
+}
+
+/* 统一等宽字体 */
+small {
+    font-size: 12px;
+}
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/** 重置列表元素 **/
+ul,
+ol {
+    list-style: none;
+}
+
+/** 重置文本格式元素 **/
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/** 重置表单元素 **/
+legend {
+    color: #000;
+}
+
+/* for ie6 */
+fieldset,
+img {
+    border: 0;
+}
+
+/* img 搭车：让链接里的 img 无边框 */
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+
+/* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 清除浮动 */
+.ks-clear:after,
+.clear:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.ks-clear,
+.clear {
+    *zoom: 1;
+}
+
+.tabTitle {
+    padding: 0 .5rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: .9rem;
+}
+
+.tabTitle .left {
+    font-family: Adobe Heiti Std;
+    font-weight: bold;
+    color: #666666;
+    font-size: .9rem;
+}
+
+.tabTitle .right {
+    
+font-family: Source Han Sans CN;
+font-weight: 400;
+color: #777777;
+font-size: .6rem;
+}
+
+.tabTitle .left .icon {
+    /* 6 35 */
+    widows: 6px;
+    height: .9rem;
+    margin-right: .45rem;
+}
+
+#header img{
+    margin-top: 1.1975rem;
+    transform: translate(0,-50%);
+}
+#header{
+    width: 18.75rem;
+    height: 2.375rem;   
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding:0 .5rem;
+    line-height: 2.375rem;
+    position: relative;
+    font-size: .8rem;
+    font-family: PingFang SC;
+    font-weight: 800;
+    color: #000000;
+    border-bottom:1px solid #CFCFCE;
+}
+
+
+.my-swipe .van-swipe-item {
+    color: #fff;
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+}
+.steap1{
+    width: 6.3rem;
+    height: 4.75rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.steap-title{
+    font-size: .9rem;
+    font-family: PingFang SC;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-top:2.3rem;
+    margin-left:.8rem;
+    text-align: left;
+    
+}
+.steap1Text  .right{
+    margin-left:1.25rem;
+}
+.steap1 img{
+    position: absolute;
+    width: 6.3rem;
+    height: 9.5rem;
+    bottom:0;
+    left:0;
+    z-index: -1;
+}
+
+.steap1Text{
+    display: flex;
+    padding:0 .8rem;
+    margin-top:1.245rem;
+}
+.steap1Text p{
+font-size: .7rem;
+font-family: PingFang SC;
+font-weight: 500;
+color: #333333;
+
+}
+.steap1Text .text{
+    margin-bottom:.25rem;
+}
+.stepPic{
+    padding:0 .8rem;
+    height: 12.4rem;
+    margin-top:1.65rem;
+    display: flex;
+    justify-content: space-between;
+}
+.stepPic .step{
+    width: 7.4rem;
+    height: 12.4rem;
+    position: relative;
+}
+.stepPic .step img{
+    width: 100%;
+    height: 100%;
+}
+
+.stepPic .step .stp{
+    width: 3.325rem;
+    height: 3.325rem;
+    position: absolute;
+}
+.stepPic .step .stp1{
+    top:0;
+    right:-0.2rem;
+}
+.stepPic .step .stp2{
+    top:2.65rem;
+    right:1px;
+}
+.stepPic .step .stp3{
+    top:4.425rem;
+    right:.75rem;
+}
+.stepPic .step .stp4{
+    top:1.8rem;
+    right:.475rem;
+}
+.stepPic .step .stpBg{
+    width: 3.825rem;
+    height: 5.125rem;
+    bottom:-1rem;
+    right:-0.8rem;
+    z-index: -1;
+}
+.step2{
+    display: flex;
+    justify-content: space-between;
+    padding:0 .8rem;
+}
+.step2 .text{
+    width: 10.9rem;
+    height: 3.125rem;
+    font-size: .7rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #333333;
+
+}

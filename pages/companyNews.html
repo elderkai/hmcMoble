@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../public/lib/vant@2.11.2/index.css">
+    <link rel="stylesheet" href="../public/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="../public/css/public.css">
+    <link rel="stylesheet" href="../public/css/companyNews.css">
+</head>
+
+<body>
+    <div id="vue">
+        <div id="header">
+            <a href="../index.html">
+                <i style="width: .3rem;height: .4rem;" class="layui-icon layui-icon-left"></i>   
+            </a>
+            <div class="name">企业动态</div>
+            <a href="../index.html">
+                <img style="width:.8rem;height:.8rem;" src="../public/images/icon_home.png" alt="">
+            </a>
+        </div>
+        <van-swipe class="my-swipe" :autoplay="300000" indicator-color="white">
+            <van-swipe-item v-for="(image, index) in images" :key="index"><img style="width: 100%;height: 100%;"
+                    :src="image" alt="">
+            </van-swipe-item>
+        </van-swipe>
+        <img v-for="img in images" v-lazy="img" />
+        <div class="newLists">
+            <p class="title">
+                <img style="width: .85rem;height: .9rem;margin-left:.8rem" src="../public/images/37.png" alt="">
+                &nbsp; 最新资讯
+            </p>
+            <a href="./newsDetail.html">
+                <div v-for="(title,index) in news" :key="index" class="newsItem">{{title}}</div>
+            </a>
+
+        </div>
+        <div style="padding:0 .8rem">
+
+            <van-pagination v-model="currentPage" :total-items="24" :items-per-page="5" />
+        </div>
+        <div @touchmove.prevent>
+            <img class="dragBoxS" @click="clickDrag" ref="dragBox" src="../public/images/38.png" alt="" srcset=""
+                @touchstart="touchstartHandle('dragBox', $event)" @touchmove="touchmoveHandle('dragBox', $event)" />
+        </div>
+    </div>
+
+</body>
+<script src="../public/lib/vue/vue.min.js"></script>
+<script src="../public/lib/vant@2.11.2/vant.min.js"></script>
+<script src="../public/js/public.js"></script>
+<script src="../public/lib/layui/layui.js"></script>
+<script src="../public/js/product.js"></script>
+<script>
+    new Vue({
+        el: '#vue',
+        data() {
+            return {
+                images: [
+                    "../public/images/p7.png",
+                    "../public/images/p5.png",
+                    "../public/images/p6.png",
+                ],
+                currentPage: 1,
+                news: [
+                    "招商信诺健康管理有限公司推出EAP员工帮助计划",
+                    "《2020中国高净值人群健康投资白皮书》",
+                    "招商信诺人寿荣膺中国财经峰会“2020杰出品牌形象奖”",
+                    "招商信诺再度发布全球疫情影响调查报告：中国轻武器委屈委屈额哇请问全额",
+                    "2020 年方舟奖榜单揭晓 招商信诺人寿连续五年...",
+                    "招商信诺健康管理有限公司推出EAP员工帮助计划",
+                    "《2020中国高净值人群健康投资白皮书》",
+                    "招商信诺人寿荣膺中国财经峰会“2020杰出品牌形象奖”",
+                    "招商信诺再度发布全球疫情影响调查报告：中国...",
+
+
+                ],
+                coordinate: {
+                    client: {},
+                    elePosition: {},
+                },
+
+            }
+        },
+        mounted() {},
+        methods: {
+            clickDrag() {
+                alert("ok")
+            },
+            touchstartHandle(refName, e) {
+                let element = e.targetTouches[0];
+                // 记录点击的坐标
+                this.coordinate.client = {
+                    x: element.clientX,
+                    y: element.clientY,
+                };
+                // 记录需要移动的元素坐标
+                this.coordinate.elePosition.left = this.$refs[refName].offsetLeft;
+                this.coordinate.elePosition.top = this.$refs[refName].offsetTop;
+            },
+            touchmoveHandle(refName, e) {
+                let element = e.targetTouches[0];
+                // 根据初始 client 位置计算移动距离(元素移动位置=元素初始位置+光标移动后的位置-光标点击时的初始位置)
+                let x =
+                    this.coordinate.elePosition.left +
+                    (element.clientX - this.coordinate.client.x);
+                let y =
+                    this.coordinate.elePosition.top +
+                    (element.clientY - this.coordinate.client.y);
+                // 限制可移动距离，不超出可视区域
+                x =
+                    x <= 0 ?
+                    0 :
+                    x >= innerWidth - this.$refs[refName].offsetWidth ?
+                    innerWidth - this.$refs[refName].offsetWidth :
+                    x;
+                y =
+                    y <= 0 ?
+                    0 :
+                    y >= innerHeight - this.$refs[refName].offsetHeight ?
+                    innerHeight - this.$refs[refName].offsetHeight :
+                    y;
+                // 移动当前元素
+                this.$refs[refName].style.left = x + "px";
+                this.$refs[refName].style.top = y + "px";
+            },
+        }
+    });
+</script>
+
+</html>

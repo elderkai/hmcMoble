@@ -1,0 +1,11 @@
+@echo off
+setlocal enabledelayedexpansion
+for %%x in (*) do (
+  if not "%%x"=="demo.bat" (
+    set /a sum+=1
+    rename "%%x" "!sum!.txt"
+    
+)
+)
+echo 批量重命名完成！
+pause

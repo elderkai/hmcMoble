@@ -1,0 +1,366 @@
+.header-bg {
+    width: 100%;
+    height: 6.8rem;
+    background: url("../images/bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.case-carousel {
+    width: 17.5rem;
+    overflow: hidden;
+    height: 6.5rem;
+    padding-left: .5rem;
+}
+
+.layui-carousel {
+    background: none !important;
+    height: 6.5rem !important;
+}
+
+
+
+.layui-carousel>[carousel-item]>* {
+    background: none !important;
+
+}
+
+.header {
+    width: 100%;
+    overflow-x: hidden;
+    height: 9.8rem;
+}
+
+.case-carousel img {
+    border-radius: .25rem;
+}
+
+.layui-carousel-ind li {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+}
+
+.layui-carousel-ind ul {
+    background: none;
+}
+
+.layui-carousel-ind li.layui-this {
+    width: 0.9rem;
+    border-radius: 10px;
+    opacity: 0.7;
+    transition: all 0.3s linear
+}
+
+.layui-carousel-ind {
+    top: -25px;
+}
+
+.layui-carousel-arrow:hover,
+.layui-carousel-ind ul:hover {
+    background-color: none;
+}
+
+.navTabs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 .5rem;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 1.75rem;
+}
+
+.nav-item img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+}
+
+.nav-item {
+    font-size: .6rem;
+    font-family: FZLanTingHeiS-R-GB;
+    font-weight: 400;
+    color: #555555;
+    text-align: center;
+    width: auto;
+    height: 3.3rem;
+}
+
+.logoBox img {
+    width: 100%;
+}
+
+.logoBox {
+    padding: 0.55rem 0.55rem 0.5rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.logo-img {
+    float: left;
+    width: 5rem;
+    height: 1.5rem;
+}
+
+.logo-text {
+    float: right;
+    width: 8.4rem;
+    height: 1.25rem;
+}
+
+.chProducts {
+    padding: 0 .5rem;
+    margin-top: 1.35rem;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.chProduct .title {
+    font-size: .8rem;
+    font-family: Adobe Heiti Std;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: .5rem;
+
+}
+
+.chProduct p {
+    /* width: 5.01rem; */
+    /* height: 2.25rem; */
+    font-size: .5rem;
+    font-family: Adobe Heiti Std;
+    font-weight: normal;
+    color: #666666;
+    line-height: .9rem;
+
+
+}
+
+.chProduct {
+    width: 8.4rem;
+    height: 9.9rem;
+    background-image: url("../images/30.png");
+    padding: .85rem .5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.chProductImg2 {
+    background-image: url("../images/25.png");
+}
+
+.chProductImg3 {
+    background-image: url("../images/26.png");
+}
+
+.chProductImg4 {
+    background-image: url("../images/27.png");
+}
+
+.chProductImg5 {
+    background-image: url("../images/12.png");
+}
+
+.chProductImg6 {
+    background-image: url("../images/23.png");
+}
+
+.chProductImg7 {
+    background-image: url("../images/29.png");
+}
+
+.ph-mt {
+    margin-top: 2.325rem;
+}
+
+.phProducts .left p {}
+
+.phProducts .phProduct {
+    width: 7.1rem;
+    height: 11.825rem;
+}
+
+.chProduct_small {
+    width: 9.9rem;
+    height: 5.6rem;
+}
+
+.csTeleNum {
+    width: 17.5rem;
+    height: 7.4rem;
+    margin: 0 auto;
+    background: url("../images/4.png");
+    margin-top: 1.7rem;
+    background-repeat: no-repeat;
+    padding: 1.25rem 1.85rem;
+    box-sizing: border-box;
+    margin-bottom: 1.55rem;
+}
+
+.csTeleNum .title {
+    font-size: .95rem;
+    font-family: PingFang SC;
+    font-weight: 800;
+    color: #555555;
+    margin-bottom: .5rem;
+    ;
+}
+
+.csTeleNum p {
+    font-size: .8rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #45B233;
+
+}
+
+.csTeleNum .work-time {
+    font-size: .55rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #999999;
+
+}
+
+.companyNews {
+    width: 17.5rem;
+    height: 18.475rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    margin: 0 auto;
+    margin-top: 1.325rem;
+    padding: 0 .75rem;
+    padding-top: .725rem;
+    margin-bottom: 1.6rem;
+}
+
+.news-tab {
+    display: flex;
+    justify-content: space-between;
+    padding: .75rem 0 .75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-tab .left .text {
+    width: 8.5rem;
+    height: 1.9rem;
+    font-size: .75rem;
+    font-family: Adobe Heiti Std;
+    font-weight: normal;
+    color: #333333;
+}
+
+.news-tab .left .time {
+    margin-top: 1.825rem;
+    font-size: .5rem;
+    font-family: FZLanTingHeiS-R-GB;
+    font-weight: 400;
+    color: #999999;
+
+}
+
+.news-tab img {
+    width: 6.4rem;
+    height: 4.275rem;
+    border-radius: 5px;
+}
+
+.aboutUs {
+    width: 17.5rem;
+    height: 16rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    margin: 0 auto;
+    margin-top: 1.375rem;
+    padding-top: 1.75rem;
+    z-index: 40;
+}
+
+.aboutUs .text span {
+    color: #178508;
+}
+
+.aboutUs .text {
+    width: 14.675rem;
+    height: 5.3rem;
+    font-size: .55rem;
+    font-family: FZLanTingHeiS-R-GB;
+    font-weight: 400;
+    color: #666666;
+    margin: 0 auto;
+    line-height: .95rem;
+}
+.bgImgBox{
+    position: relative;
+}
+.bgImg {
+    width: 18.75rem;
+    height: 11.125rem;
+    z-index:-1;
+    position: absolute;
+    top:-5.5rem;
+    left:0;
+}
+.aboutWx{
+    width: 17.5rem;
+    margin:0 auto;
+    height:4rem;
+    border-radius: .5rem;
+    background: #fff;
+    box-sizing: border-box;
+    padding:.5rem;
+    margin-top: .7rem;
+}
+.aboutWx .center{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+    border:1px solid #A5DCA3;
+    display: flex;
+    justify-content: space-between;
+    padding:.5rem;
+}
+.aboutWx .center .left .textBox{
+    width: 6rem;
+    height: .6rem;
+    font-size: .6rem;
+    font-family: Adobe Heiti Std;
+    font-weight: normal;
+    color: #888888;
+
+}
+.aboutWx .center .left{
+    display: flex;
+    justify-content: space-between;
+}
+    .aboutWx .center .right{
+    width: 5.25rem;
+    height:1.8rem;
+    line-height:1.8rem;
+    text-align: center;
+    font-size: .6rem;
+    color:#fff;
+    background:url("../images/14.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: PingFang SC;
+    font-weight: bold;
+    }
+    .bottom{
+        width: 100%;
+        height: 4.825rem;
+        margin-top:1.4rem;
+        text-align: center;
+        padding-top:1.95rem;
+    }
+    .bottom p{
+        font-size: .4rem;
+    }
