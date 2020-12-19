@@ -306,3 +306,6 @@ color: #333333;
     color: #333333;
 
 }
+.layui-carousel-arrow:hover, .layui-carousel-ind ul:hover {
+background: none;
+}
