@@ -329,7 +329,7 @@
     padding:.5rem;
 }
 .aboutWx .center .left .textBox{
-    width: 6rem;
+    /* width: 6rem; */
     height: .6rem;
     font-size: .6rem;
     font-family: Adobe Heiti Std;
@@ -362,5 +362,11 @@
         padding-top:1.95rem;
     }
     .bottom p{
-        font-size: .4rem;
+        font-size: 0.4rem;
+    }
+    .navTabs .nav-item .num{
+    font-size: .45rem;
+    font-family: FZLanTingHeiS-B-GB;
+    font-weight: 400;
+    color: #222222;
     }
