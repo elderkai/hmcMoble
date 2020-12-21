@@ -198,7 +198,7 @@
     background: url("../images/4.png");
     margin-top: 1.7rem;
     background-repeat: no-repeat;
-    padding: 1.25rem 1.85rem;
+    padding: 1rem 1.85rem;
     box-sizing: border-box;
     background-size: cover;
     margin-bottom: 1.55rem;
@@ -370,4 +370,26 @@
     font-family: FZLanTingHeiS-B-GB;
     font-weight: 400;
     color: #222222;
+    }
+    .btn_Call{
+        display:flex;
+        margin-top:.5rem;
+    }
+    .btn_Call .btn_item{
+        background:#3FB438;
+        width:3.95rem;
+        height:1.35rem;
+        line-height:1.35rem;
+        text-align:center;
+        color:#fff;
+        border-radius:18px;
+    }
+    .btn_Call .btnCallPe{
+    font-size: .6rem;
+    font-family: FZLanTingHeiS-R-GB;
+    font-weight: 400;
+    color: #42B436;
+    background:#fff;
+    border:1px solid #42B436;
+    margin-left:.3rem;
     }
