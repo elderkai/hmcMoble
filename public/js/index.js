@@ -3,7 +3,7 @@ layui.use('carousel', function(){
     //建造实例
     carousel.render({
       elem: '#test1'
-      ,autoplay:false
+      ,autoplay:true
       ,width: '100%' //设置容器宽度
       ,arrow: 'none' //始终显示箭头
       //,anim: 'updown' //切换动画方式
