@@ -200,6 +200,7 @@
     background-repeat: no-repeat;
     padding: 1.25rem 1.85rem;
     box-sizing: border-box;
+    background-size: cover;
     margin-bottom: 1.55rem;
 }
 
