@@ -21,7 +21,7 @@
 }
 .layui-carousel {
     background: none !important;
-    height: 6.5rem !important;
+    height: 7.5rem !important;
    
 }
 
@@ -31,12 +31,14 @@
     background: none !important;
 
 }
-
-.header {
+.layui-carousel-ind{
+    top:-40px!important;
+}
+/* .header {
     width: 100%;
     overflow-x: hidden;
     height: 9.8rem;
-}
+} */
 
 .case-carousel img {
     border-radius: .25rem;
@@ -77,7 +79,7 @@
     width: 100%;
     padding: 0 .5rem;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 90px;
     margin-bottom: 1.5rem;
 }
 
