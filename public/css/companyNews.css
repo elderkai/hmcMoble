@@ -75,7 +75,9 @@ font-weight: 500;
 color: #999999;
 margin-top:.9rem;
 text-indent: 2em;
+
 }
+
 .newsDetail P .from{
     margin-left:2.4rem;
 }
@@ -138,5 +140,40 @@ color: #999999;
     color: #57BD46;
     text-align: center;
     margin:1.65rem auto 1.8rem;
+
+}
+.my-swipe .van-swipe-item{
+    height:7.275rem;
+}
+.van-pagination__item{
+    width: 1.4rem;
+    height: 1.4rem;
+    line-height:1.4rem;
+}
+.pageBtn{display: flex;}
+.pageBtn div{
+    display: inline-block;
+    font-size: .6rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #999999;
+    line-height: 1.15rem;
+}
+.nextPage{
+    margin-top: 1.1rem;
+}
+.pageBtn .text{
+    margin-left:1rem;
+    font-size: .6rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #999999;
+    max-width: 14rem;
+}
+.nextPage div{
+    color:rgba(87, 189, 70, 1);
+}
+.nextPage .text{
+    color:rgba(87, 189, 70, 1);
 
 }

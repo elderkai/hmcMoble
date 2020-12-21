@@ -8,14 +8,21 @@
 
 .case-carousel {
     width: 17.5rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 6.5rem;
-    padding-left: .5rem;
+    padding:0  .6rem;
 }
+.case-carousel img{
+    box-shadow: 0px 10px 57px 0px #EFEFEF;  
 
+}
+.tabTitle .layui-icon{
+    font-size: .6rem;
+}
 .layui-carousel {
     background: none !important;
     height: 6.5rem !important;
+   
 }
 
 
@@ -71,7 +78,7 @@
     padding: 0 .5rem;
     box-sizing: border-box;
     margin-top: 20px;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.5rem;
 }
 
 .nav-item img {
@@ -113,8 +120,8 @@
 }
 
 .chProducts {
-    padding: 0 .5rem;
-    margin-top: 1.35rem;
+    padding: 0  0.625rem;
+    margin-top: 0.875rem;
     justify-content: space-between;
     display: flex;
 
@@ -247,13 +254,14 @@
     justify-content: space-between;
     padding: .75rem 0 .75rem;
     border-bottom: 1px solid #ddd;
+    padding-bottom: .725rem;
 }
 
 .news-tab .left .text {
     width: 8.5rem;
     height: 1.9rem;
     font-size: .75rem;
-    font-family: Adobe Heiti Std;
+    font-family: PingFang SC;
     font-weight: normal;
     color: #333333;
 }
@@ -343,17 +351,27 @@
     justify-content: space-between;
 }
     .aboutWx .center .right{
-    width: 5.25rem;
-    height:1.8rem;
-    line-height:1.8rem;
+    width: 5rem;
+    margin-right: .4rem;
+    height:1.5rem;
+    line-height:1.5rem;
     text-align: center;
     font-size: .6rem;
+    position: relative;
     color:#fff;
-    background:url("../images/14.png");
+    top:.2rem;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: PingFang SC;
     font-weight: bold;
+    border-radius: 18px;
+    background: -webkit-linear-gradient(left,  RGBA(110, 209, 99, 1), RGBA(66, 179, 53, 1)); /* Safari 5.1 - 6.0 */ 
+
+    background: -o-linear-gradient(right,RGBA(110, 209, 99, 1),RGBA(66, 179, 53, 1) ); /* Opera 11.1 - 12.0 */ 
+
+    background: -moz-linear-gradient(right, RGBA(110, 209, 99, 1), RGBA(66, 179, 53, 1)); /* Firefox 3.6 - 15 */ 
+
+    background: linear-gradient(to right,  RGBA(110, 209, 99, 1),RGBA(66, 179, 53, 1) ); /* 标准的语法 */
     }
     .bottom{
         width: 100%;
@@ -389,7 +407,7 @@
     font-family: FZLanTingHeiS-R-GB;
     font-weight: 400;
     color: #42B436;
-    background:#fff;
+    background:RGBA(255, 255, 255, 0);
     border:1px solid #42B436;
     margin-left:.3rem;
     }

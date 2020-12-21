@@ -173,11 +173,11 @@ font-size: .6rem;
     /* 6 35 */
     widows: 6px;
     height: .9rem;
-    margin-right: .45rem;
+    margin-right: .2rem;
 }
 
 #header img{
-    margin-top: 1.1975rem;
+    margin-top: 50%;
     transform: translate(0,-50%);
 }
 #header{
@@ -308,4 +308,7 @@ color: #333333;
 }
 .layui-carousel-arrow:hover, .layui-carousel-ind ul:hover {
 background: none;
+}
+.noIndent{
+    text-indent: 0!important;
 }

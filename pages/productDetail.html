@@ -11,6 +11,8 @@
 </head>
 <body>
     <div id="vue">
+        <div class="getHeight">
+
         <div id="header">
             <a href="./productList.html">
                 <i style="width: .3rem;height: .4rem;" class="layui-icon layui-icon-left"></i>   
@@ -29,22 +31,32 @@
             <p>   <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png" alt="">专属护士&nbsp;  <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png" alt="">一对一专属私人医生  &nbsp;<img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png" alt="">多学科医疗专家团队 </p>
         </div>
         <div style="width:100%;height:.5rem;background: #E0E0E0;opacity: 0.3;margin-top: .4rem;"></div>
-        <van-tabs>
-        <van-tab title="产品详情">   <div style="width:100%;height:.5rem;background: #E5F1FD;opacity: 1;margin-top: .4rem;"></div>   <img src="../public/images/p9.png" style="width: 100%;" alt="">
-            <div class="bottom">
-                <div class="left">
-                    <p><img style="width: .675rem;" src="../public/images/35.png" alt=""> 电话咨询</p>
-                    <p class="time">服务时间：08:00-18:00</p>
-                </div>
-                <div class="right"> <p><img style="width: 1.05rem;height: .9rem;" src="../public/images/36.png" alt=""> 在线咨询</p></div>
-            </div>
-        
+    </div>
+
+
+        <van-tabs  v-model="active" scrollspy sticky>
+        <van-tab  title="产品详情">   
+            <img src="../public/images/step1.png" style="width: 100%;" alt="">
         </van-tab>
-        <van-tab title="商家案例"></van-tab>
-        <van-tab title="服务流程"></van-tab>
-        <van-tab title="常见问题"></van-tab>
+        <van-tab title="商家案例">
+            <img src="../public/images/step2.png" style="width: 100%;" alt="">
+        </van-tab>
+        <van-tab title="服务流程">
+            <img src="../public/images/step3.png" style="width: 100%;" alt="">
+        </van-tab>
+        <van-tab title="常见问题">
+            <img src="../public/images/step3.png" style="width: 100%;" alt="">
+        </van-tab>
       </van-tabs>   
- 
+      <div style="width:100%;height:.5rem;background: #E5F1FD;opacity: 1;"></div>
+         
+      <div class="bottom">
+          <div class="left">
+              <p><img style="width: .675rem;" src="../public/images/35.png" alt=""> 电话咨询</p>
+              <p class="time">服务时间：08:00-18:00</p>
+          </div>
+          <div class="right"> <p><img style="width: 1.05rem;height: .9rem;" src="../public/images/36.png" alt=""> 在线咨询</p></div>
+      </div>
     
     </div>  
 
@@ -64,6 +76,7 @@
                     "../public/images/bg2.png",
                     "../public/images/bg4.png",
                 ],
+                active:"0"
 
             }
         },

@@ -65,9 +65,9 @@
     margin-top: .8rem;
 
 }
-
-
-
+.tabBody{
+    margin-top:23px;
+}
 
 
 
@@ -102,13 +102,23 @@
     line-height: 1.8rem;
 
 }
+.van-tabs__wrap{position: relative;}
 .bottom{
     width: 100%;
-    height: 2.5rem;
+    height: 2.25rem;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     border-top:1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.pointBox{
+    position: relative;
+}
+.van-tab__pane{
+    padding-bottom: 2.225rem;
 }
 .bottom .left p{
     font-size: .6rem;
@@ -141,4 +151,8 @@ color: #FFFFFF;
 text-align: center;
 line-height: 2.25rem;
 
+}
+.step_jump2{
+position: absolute;
+top:200px;
 }
