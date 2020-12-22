@@ -41,6 +41,7 @@
 
             <van-pagination v-model="currentPage" :total-items="24" :items-per-page="5" />
         </div>
+        <div style="height: 1px;"></div>
         <div @touchmove.prevent>
             <img class="dragBoxS" @click="clickDrag" ref="dragBox" src="../public/images/38.png" alt="" srcset=""
                 @touchstart="touchstartHandle('dragBox', $event)" @touchmove="touchmoveHandle('dragBox', $event)" />
