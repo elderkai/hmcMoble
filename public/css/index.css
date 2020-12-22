@@ -80,7 +80,7 @@
     padding: 0 .5rem;
     box-sizing: border-box;
     margin-top: 90px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 .navTabs-bottom{
     margin-top:20px;
@@ -287,13 +287,13 @@
 
 .aboutUs {
     width: 17.5rem;
-    height: 16rem;
+    height: 16.5rem;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
     border-radius: .5rem;
     margin: 0 auto;
     margin-top: 1.375rem;
-    padding-top: 1.75rem;
+    padding-top: .65rem;
     z-index: 40;
 }
 
@@ -301,6 +301,15 @@
     color: #178508;
 }
 
+.aboutUs .textBox {
+    width: 16.15rem;
+height: 7.475rem;
+background: #F7FAF7;
+border-radius: 10px;
+margin:0 auto;
+padding:1.1rem 0;
+
+}
 .aboutUs .text {
     width: 14.675rem;
     height: 5.3rem;

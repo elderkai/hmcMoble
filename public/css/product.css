@@ -118,7 +118,10 @@
     position: relative;
 }
 .van-tab__pane{
-    padding-bottom: 2.225rem;
+    padding-bottom: 0;
+}
+.van-tabs__content{
+    padding-bottom:2.725rem;
 }
 .bottom .left p{
     font-size: .6rem;
