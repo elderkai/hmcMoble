@@ -66,7 +66,8 @@
 
 }
 .tabBody{
-    margin-top:23px;
+    padding-top:23px;
+    background: #F5F5F5;
 }
 
 
@@ -87,7 +88,7 @@
 .introduce .title {
     font-size: .85rem;
     font-family: PingFang SC;
-    font-weight: 20rem;
+    font-weight: bold;
     color: #000000;
     margin-left: .825rem;
 
