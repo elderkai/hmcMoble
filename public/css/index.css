@@ -387,14 +387,20 @@ padding:1.1rem 0;
     background: linear-gradient(to right,  RGBA(110, 209, 99, 1),RGBA(66, 179, 53, 1) ); /* 标准的语法 */
     }
     .bottom{
-        width: 100%;
-        height: 4.825rem;
-        margin-top:1.4rem;
-        text-align: center;
-        padding-top:1.95rem;
+    width: 100%;
+    height: 4.825rem;
+    margin-top:1.4rem;
+    text-align: center;
+    padding-top:1.95rem;
     }
     .bottom p{
-        font-size: 0.4rem;
+    font-size: 0.4rem;
+    }
+    .navTabs .nav-item p{
+    font-size: .5rem;
+    font-family: FZLanTingHeiS-R-GB;
+    font-weight: 400;
+    color: #222222;
     }
     .navTabs .nav-item .num{
     font-size: .45rem;

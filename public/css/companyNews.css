@@ -33,7 +33,7 @@ margin-bottom: 1rem;
     color:#555555;
 }
 .van-pagination{
-    margin: 1.2rem 0;
+    margin:0;
 }
 .van-pagination__item{
     border:1px solid #ddd;
@@ -109,6 +109,7 @@ color: #57BD46;
 }
 .consult{
     padding:0 .8rem;
+    padding-top: 1.65rem;
 }
 .consult .consult_title  .title{
     font-size: .75rem;
