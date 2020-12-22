@@ -189,6 +189,7 @@ font-size: .6rem;
     transform: translate(0,-50%);
 }
 #header{
+    background: #fff;
     width: 18.75rem;
     height: 2.375rem;   
     display: flex;
@@ -202,7 +203,7 @@ font-size: .6rem;
     font-weight: 800;
     color: #000000;
     border-bottom:1px solid #CFCFCE;
-    background: #fff;
+   
 }
 
 
