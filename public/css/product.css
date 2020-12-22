@@ -94,7 +94,7 @@
 }
 
 .introduce P {
-    margin-left: .825rem;
+    margin:0  .825rem;
     font-size: .55rem;
     font-family: PingFang SC;
     font-weight: 500;

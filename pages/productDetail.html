@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,58 +10,66 @@
     <link rel="stylesheet" href="../public/css/public.css">
     <link rel="stylesheet" href="../public/css/product.css">
 </head>
+
 <body>
     <div id="vue">
         <div class="getHeight">
 
-        <div id="header">
-            <a href="./productList.html">
-                <i style="width: .3rem;height: .4rem;" class="layui-icon layui-icon-left"></i>   
-            </a>
-            <div class="name">产品详情</div>
-            <a href="../index.html">
-                <img style="width:.8rem;height:.8rem;" src="../public/images/icon_home.png" alt="">
-            </a>
+            <div id="header">
+                <a href="./productList.html">
+                    <i style="width: .3rem;height: .4rem;" class="layui-icon layui-icon-left"></i>
+                </a>
+                <div class="name">产品详情</div>
+                <a href="../index.html">
+                    <img style="width:.8rem;height:.8rem;" src="../public/images/icon_home.png" alt="">
+                </a>
+            </div>
+            <van-swipe class="my-swipe" :autoplay="300000" indicator-color="white">
+                <van-swipe-item v-for="(image, index) in images" :key="index"><img style="width: 100%;height: 100%;"
+                        :src="image" alt=""></van-swipe-item>
+            </van-swipe>
+            <img v-for="img in images" v-lazy="img" />
+            <div class="introduce">
+                <div class="title">私属医疗管家个人版</div>
+                <p>
+                    <img style="width: .75rem;height: .7rem;" src="../public/images/icon_right.png" alt="">
+                    &nbsp;专属护士&nbsp;&nbsp;
+                    <img style="width: .75rem;height: .7rem;" src="../public/images/icon_right.png" alt="">
+                    &nbsp;一对一专属私人医生 &nbsp; &nbsp;
+                    <img style="width: .75rem;height: .7rem;" src="../public/images/icon_right.png" alt="">
+                    &nbsp;多学科医疗专家团队 </p>
+            </div>
+            <div style="width:100%;height:.5rem;background: #E0E0E0;opacity: 0.3;margin-top: .4rem;"></div>
         </div>
-        <van-swipe class="my-swipe" :autoplay="300000" indicator-color="white">
-            <van-swipe-item  v-for="(image, index) in images" :key="index"><img  style="width: 100%;height: 100%;" :src="image" alt=""></van-swipe-item>
-          </van-swipe>
-          <img v-for="img in images" v-lazy="img" />
-          <div class="introduce">
-            <div class="title">私属医疗管家个人版</div>      
-            <p>   <img style="width: .75rem;height: .7rem;" src="../public/images/icon_right.png" alt="">&nbsp; 专属护士&nbsp;&nbsp;   
-                <img style="width: .75rem;height: .7rem;" src="../public/images/icon_right.png" alt="">&nbsp; 一对一专属私人医生  &nbsp; &nbsp;
-                <img style="width: .75rem;height: .7rem;" src="../public/images/icon_right.png" alt="">&nbsp; 多学科医疗专家团队 </p>
+
+
+        <van-tabs v-model="active" scrollspy sticky>
+            <van-tab title="产品详情">
+                <img src="../public/images/step1.png" style="width: 100%;" alt="">
+            </van-tab>
+            <van-tab title="商家案例">
+                <img src="../public/images/step2.png" style="width: 100%;" alt="">
+            </van-tab>
+            <van-tab title="服务流程">
+                <img src="../public/images/step3.png" style="width: 100%;" alt="">
+            </van-tab>
+            <van-tab title="常见问题">
+                <img src="../public/images/step3.png" style="width: 100%;" alt="">
+            </van-tab>
+        </van-tabs>
+        <div style="width:100%;height:.5rem;background: #E5F1FD;opacity: 1;"></div>
+
+        <div class="bottom">
+            <div class="left">
+                <p><img style="width: .675rem;" src="../public/images/35.png" alt=""> 电话咨询</p>
+                <p class="time">服务时间：08:00-18:00</p>
+            </div>
+            <div class="right">
+                <p><img style="width: 1.05rem;height: .9rem;" src="../public/images/36.png" alt=""> 在线咨询</p>
+            </div>
         </div>
-        <div style="width:100%;height:.5rem;background: #E0E0E0;opacity: 0.3;margin-top: .4rem;"></div>
+
     </div>
-
-
-        <van-tabs  v-model="active" scrollspy sticky>
-        <van-tab  title="产品详情">   
-            <img src="../public/images/step1.png" style="width: 100%;" alt="">
-        </van-tab>
-        <van-tab title="商家案例">
-            <img src="../public/images/step2.png" style="width: 100%;" alt="">
-        </van-tab>
-        <van-tab title="服务流程">
-            <img src="../public/images/step3.png" style="width: 100%;" alt="">
-        </van-tab>
-        <van-tab title="常见问题">
-            <img src="../public/images/step3.png" style="width: 100%;" alt="">
-        </van-tab>
-      </van-tabs>   
-      <div style="width:100%;height:.5rem;background: #E5F1FD;opacity: 1;"></div>
-         
-      <div class="bottom">
-          <div class="left">
-              <p><img style="width: .675rem;" src="../public/images/35.png" alt=""> 电话咨询</p>
-              <p class="time">服务时间：08:00-18:00</p>
-          </div>
-          <div class="right"> <p><img style="width: 1.05rem;height: .9rem;" src="../public/images/36.png" alt=""> 在线咨询</p></div>
-      </div>
-    
-    </div>  
 
 </body>
 <script src="../public/lib/vue/vue.min.js"></script>
@@ -69,7 +78,7 @@
 <script src="../public/lib/layui/layui.js"></script>
 <script src="../public/js/product.js"></script>
 <script>
-       new Vue({
+    new Vue({
         el: '#vue',
         data() {
             return {
@@ -78,16 +87,15 @@
                     "../public/images/bg2.png",
                     "../public/images/bg4.png",
                 ],
-                active:"0"
+                active: "0"
 
             }
         },
-        mounted() {
-        },
+        mounted() {},
         methods: {
-          
+
         }
     });
-
 </script>
+
 </html>

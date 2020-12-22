@@ -109,8 +109,9 @@ color: #57BD46;
 }
 .consult{
     padding:0 .8rem;
-    padding-top: 1.65rem;
+    
 }
+
 .consult .consult_title  .title{
     font-size: .75rem;
     font-family: PingFang SC;
@@ -121,6 +122,7 @@ color: #000000;
 .consult .consult_title {
     display: flex;
     justify-content: space-between;
+    margin-top: 1.65rem;
 }
 .consult .consult_title  .btn_more{
 font-size: .6rem;
