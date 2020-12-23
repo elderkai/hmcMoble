@@ -3,7 +3,9 @@
     border-bottom: 2px solid #56B947;
 }
 
-.van-tabs__nav {}
+.productList .van-tabs__nav {
+    padding-left: 6px;
+}
 
 .van-tab {
     font-size: .7rem;
