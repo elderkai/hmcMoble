@@ -148,7 +148,7 @@ table {
 }
 
 .tabTitle {
-    padding: 0 .5rem;
+    padding: 0 .625rem;
     display: flex;
     justify-content: space-between;
     line-height: .9rem;
@@ -158,8 +158,8 @@ body .phProducts{
     margin-top: 0;
 }
 body .ctService{
-    margin-top: 1.51rem;
-    margin-bottom: 1.7rem;
+    /* margin-top: 1.51rem;
+    margin-bottom: 1.7rem; */
 }
 
 .tabTitle .left {
@@ -181,9 +181,13 @@ font-size: .6rem;
     /* 6 35 */
     widows: 6px;
     height: .9rem;
-    margin-right: .2rem;
+    margin-right:0 .2rem;
 }
-
+.pagIng{
+    position: relative;
+    top:-1px;
+    font-size: .6rem;
+}
 #header img{
     margin-top: 50%;
     transform: translate(0,-50%);
@@ -317,8 +321,18 @@ color: #333333;
 
 }
 .layui-carousel-arrow:hover, .layui-carousel-ind ul:hover {
-background: none;
+    background: none;
 }
 .noIndent{
     text-indent: 0!important;
+}
+.van-pagination__next, .van-pagination__prev{
+    padding:0;
+}
+.van-pagination__prev{
+    margin-right: .2rem;
+}
+.van-pagination__next{
+    margin-left: .2rem;
+    padding-left: 2px;
 }

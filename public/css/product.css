@@ -106,7 +106,7 @@
 .van-tabs__wrap{position: relative;}
 .bottom{
     width: 100%;
-    height: 2.25rem;
+    height: 2.5rem;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -140,20 +140,20 @@ font-weight: 500;
 .bottom .left{
     background: #fff;
     width: 7.77rem;
-    height: 2.25rem;
-    padding-top:.3rem;
+    height: 2.5rem;
+    padding-top:.5rem;
     
 }
 .bottom .right{
    width: 11rem;
-    height: 2.25rem;
+    height: 2.5rem;
 background: #4EB83D;
 font-size: .75rem;
 font-family: PingFang SC;
 font-weight: 800;
 color: #FFFFFF;
 text-align: center;
-line-height: 2.25rem;
+line-height: 2.5rem;
 
 }
 .step_jump2{
