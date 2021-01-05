@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,50 +10,63 @@
     <link rel="stylesheet" href="../public/css/public.css">
     <link rel="stylesheet" href="../public/css/product.css">
 </head>
+
 <body>
     <div id="vue" class="productList" style="background: #F6F6F6;min-height: 100vh;">
         <div id="header">
             <a href="../index.html">
-                <i style="width: .3rem;height: .4rem;" class="layui-icon layui-icon-left"></i>   
+                <i style="width: .3rem;height: .4rem;" class="layui-icon layui-icon-left"></i>
             </a>
-              <div class="name">企业健康管理</div>
-              <a href="../index.html">
+            <div class="name">企业健康管理</div>
+            <a href="../index.html">
                 <img style="width:.8rem;height:.8rem;" src="../public/images/icon_home.png" alt="">
             </a>
-          </div>
-          <div class="tableSelect">
-              <van-tabs swipe-threshold="4" v-model="active" scrollspy sticky >
-                  <van-tab title="全部">
+        </div>
+        <div class="tableSelect">
+            <van-tabs swipe-threshold="4" v-model="active" scrollspy sticky>
+                <van-tab title="全部">
 
                     <div class="tabBody">
                         <div class="product-item">
-                            <img style="width: 6.1rem;height: 6.1rem;border-radius:5px;" src="../public/images/p4.png" alt="">
+                            <img style="width: 6.1rem;height: 6.1rem;border-radius:5px;" src="../public/images/p4.png"
+                                alt="">
                             <div class="right">
                                 <div class="title">私属医疗管家</div>
-                                <p>   <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png" alt="">专属护士 &nbsp; &nbsp;  <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png" alt="">一对一专属私人医生 </p>
-                                <p style="margin-top: .45rem;"> <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png" alt="">多学科医疗专家团队</p>
+                                <p> <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png"
+                                        alt="">专属护士 &nbsp; &nbsp; <img style="width: .7rem;height: .6rem;"
+                                        src="../public/images/icon_right.png" alt="">一对一专属私人医生 </p>
+                                <p style="margin-top: .45rem;"> <img style="width: .7rem;height: .6rem;"
+                                        src="../public/images/icon_right.png" alt="">多学科医疗专家团队</p>
                                 <a href="./productDetail.html">
                                     <div class="btn_detail">了解详情</div>
                                 </a>
                             </div>
                         </div>
                         <div class="product-item">
-                            <img style="width: 6.1rem;height: 6.1rem;border-radius:5px;" src="../public/images/p5.png" alt="">
+                            <img style="width: 6.1rem;height: 6.1rem;border-radius:5px;" src="../public/images/p5.png"
+                                alt="">
                             <div class="right">
                                 <div class="title">员工援助计划</div>
-                                <p>   <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png" alt="">权威医院&nbsp; &nbsp;  <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png" alt="">精密仪器 </p>
-                                <p style="margin-top: .45rem;"> <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png" alt="">多学科医疗专家团队</p>
+                                <p> <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png"
+                                        alt="">权威医院&nbsp; &nbsp; <img style="width: .7rem;height: .6rem;"
+                                        src="../public/images/icon_right.png" alt="">精密仪器 </p>
+                                <p style="margin-top: .45rem;"> <img style="width: .7rem;height: .6rem;"
+                                        src="../public/images/icon_right.png" alt="">多学科医疗专家团队</p>
                                 <a href="./productDetail.html">
                                     <div class="btn_detail">了解详情</div>
                                 </a>
                             </div>
                         </div>
                         <div class="product-item">
-                            <img style="width: 6.1rem;height: 6.1rem;border-radius:5px;" src="../public/images/p6.png" alt="">
+                            <img style="width: 6.1rem;height: 6.1rem;border-radius:5px;" src="../public/images/p6.png"
+                                alt="">
                             <div class="right">
                                 <div class="title">医疗健康服务</div>
-                                <p>   <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png" alt="">专属护士 &nbsp; &nbsp;  <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png" alt="">一对一专属私人医生 </p>
-                                <p style="margin-top: .45rem;"> <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png" alt="">多学科医疗专家团队</p>
+                                <p> <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png"
+                                        alt="">专属护士 &nbsp; &nbsp; <img style="width: .7rem;height: .6rem;"
+                                        src="../public/images/icon_right.png" alt="">一对一专属私人医生 </p>
+                                <p style="margin-top: .45rem;"> <img style="width: .7rem;height: .6rem;"
+                                        src="../public/images/icon_right.png" alt="">多学科医疗专家团队</p>
                                 <a href="./productDetail.html">
                                     <div class="btn_detail">了解详情</div>
                                 </a>
@@ -60,15 +74,23 @@
                         </div>
                     </div>
 
-                  </van-tab>
-                  <van-tab title="团体体检"><div></div></van-tab>
-                  <van-tab title="员工援助"><div></div></van-tab>
-                  <van-tab title="医疗健康服务"><div></div></van-tab>
-                  <van-tab title="健康活动"><div></div></van-tab>
-                </van-tabs>    
-          </div>
-        
-    </div>  
+                </van-tab>
+                <van-tab title="团体体检">
+                    <div></div>
+                </van-tab>
+                <van-tab title="员工援助">
+                    <div></div>
+                </van-tab>
+                <van-tab title="医疗健康服务">
+                    <div></div>
+                </van-tab>
+                <van-tab title="健康活动">
+                    <div></div>
+                </van-tab>
+            </van-tabs>
+        </div>
+
+    </div>
 </body>
 <script src="../public/lib/vue/vue.min.js"></script>
 <script src="../public/lib/vant@2.11.2/vant.min.js"></script>
@@ -76,19 +98,18 @@
 <script src="../public/lib/layui/layui.js"></script>
 <script src="../public/js/product.js"></script>
 <script>
-       new Vue({
+    new Vue({
         el: '#vue',
         data() {
             return {
-                active: 0, 
+                active: 0,
             }
         },
-        mounted() {
-        },
+        mounted() {},
         methods: {
-          
+
         }
     });
-
 </script>
+
 </html>

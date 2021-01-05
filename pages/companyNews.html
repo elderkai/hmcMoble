@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="../public/css/public.css">
     <link rel="stylesheet" href="../public/css/companyNews.css">
 </head>
+
 <body>
     <div id="vue">
         <div id="header">
             <a href="../index.html">
-                <i style="width: .3rem;height: .4rem;" class="layui-icon layui-icon-left"></i>   
+                <i style="width: .3rem;height: .4rem;" class="layui-icon layui-icon-left"></i>
             </a>
             <div class="name">企业动态</div>
             <a href="../index.html">
@@ -26,11 +27,11 @@
                     :src="image" alt="">
             </van-swipe-item>
         </van-swipe>
-        <img v-for="img in images" v-lazy="img"/>
+        <img v-for="img in images" v-lazy="img" />
         <div class="newLists">
             <p class="title">
                 <img style="width: .85rem;height: .9rem;margin-left:.8rem" src="../public/images/37.png" alt="">
-                 最新资讯
+                最新资讯
             </p>
             <a href="./newsDetail.html">
                 <div v-for="(title,index) in news" :key="index" class="newsItem">{{title}}</div>
@@ -41,14 +42,13 @@
 
             <van-pagination v-model="currentPage" :total-items="241" :items-per-page="10" show-page-size="8">
                 <template #prev-text>
-                        <!-- <van-icon name="arrow-left"  size=".6rem" /> -->
-                        <span class="pagIng"><上一页</span>
-                  </template>
-                  <template #next-text>
-                    <span class="pagIng">下一页></span>
-                      <!-- <van-icon name="arrow"  size=".6rem"/> -->
-                  </template>
-                 
+                    <!-- <van-icon name="arrow-left"  size=".6rem" /> -->
+                    <span class="pagIng">
+                        <上一页</span> </template> <template #next-text>
+                            <span class="pagIng">下一页></span>
+                            <!-- <van-icon name="arrow"  size=".6rem"/> -->
+                </template>
+
             </van-pagination>
         </div>
         <div style="height: 1px;"></div>
