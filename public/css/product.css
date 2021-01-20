@@ -43,7 +43,31 @@
     color: #333333;
 
 }
+ .tagImg{
+    padding-left: .78rem;
+    font-size: .45rem;
+    font-family: FZLanTingHeiS-R-GB;
+    font-weight: 400;
+    color: #333333;
+    background: url("../images/icon_right.png");
+    background-repeat: no-repeat;
+    background-size: .7rem .62rem;
+    margin-right: .55rem;
+    white-space: nowrap;
+    display: inline-block;
+}
 
+.introduce .tagImg{
+    padding-left: 1.05rem;
+    background-size: .75rem .7rem;
+    background-position:0rem .5rem;
+    font-size: .55rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #999999;
+    margin-right: .35rem;
+    line-height: 1.8rem;
+}
 .product-item .right .title {
     font-size: .9rem;
     font-family: FZLanTingHeiS-B-GB;
@@ -71,12 +95,36 @@
 .tabBody {
     padding-top: 23px;
     background: #F5F5F5;
+    padding-bottom: .6rem;
 }
 
+.van-tabs  p img {
+    width: 100%;
+}
 
+.van-tabs__content{
+    width: 100%;
+    overflow-x: hidden;
+}
+.van-tabs  p strong{
+    font-size: .75rem;
+}
+.van-tabs  p {
+    font-size: .7rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #555555;
+    line-height: 1.15rem;
+    margin-top: .8rem;
+    width: 100%;
+    word-wrap:break-word;
+    word-break:normal;
+    padding:0 .85rem;
+}
 
-
-
+.van-tab__pane{
+    width:100%;
+}
 
 
 
@@ -132,7 +180,7 @@
 }
 
 .van-tabs__content {
-    padding-bottom: 2.725rem;
+    /* padding-bottom: 2.725rem; */
 }
 
 .bottom .left p {
@@ -173,4 +221,56 @@
 .step_jump2 {
     position: absolute;
     top: 200px;
+}
+.van-pagination__item--active {
+    background-color: #67C757;
+    color: #fff !important;
+}
+
+.van-pagination__item {
+    color: #555555;
+}
+
+.van-pagination {
+    margin: 0;
+    width: 100%;
+}
+
+.van-pagination__item {
+    border: 1px solid #E0E0E0;
+}
+.van-pagination__item {
+    min-width: 1.4rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    font-size: .6rem;
+}
+.btn_back {
+    width: 4.325rem;
+    height: 1.3rem;
+    border: 1px solid #57BD46;
+    border-radius: 5px;
+    line-height: 1.3rem;
+    font-size: .6rem;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #57BD46;
+    text-align: center;
+    margin: 1.65rem auto 1.8rem;
+
+}
+.nextPage div {
+    color: rgba(87, 189, 70, 1);
+}
+
+.nextPage .text {
+    color: rgba(87, 189, 70, 1);
+
+}
+.van-pagination__item--active {
+    background-color: #67C757;
+    color: #fff !important;
+}
+.van-pagination__item:active{
+    background-color: #67C757;
 }

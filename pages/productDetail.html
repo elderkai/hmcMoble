@@ -31,14 +31,17 @@
             <img v-for="img in images" v-lazy="img" />
             <div class="introduce">
                 <div class="title">私属医疗管家个人版</div>
-                <p style="white-space:nowrap;">
-                    <img style="width: .75rem;height: .7rem;" src="../public/images/icon_right.png" alt="">
-                    &nbsp;专属护士&nbsp;&nbsp;
-                    <img style="width: .75rem;height: .7rem;" src="../public/images/icon_right.png" alt="">
-                    &nbsp;一对一专属私人医生&nbsp;&nbsp;
-                    <img style="width: .75rem;height: .7rem;" src="../public/images/icon_right.png" alt="">
-                    &nbsp;多学科医疗专家团队
-                </p>
+                    <span style="margin-left: 0.825rem;" class="tagImg">
+                        专属护士
+                    </span>
+                    <span class="tagImg">
+                        一对一专属私人医生
+                    </span>
+              
+                <span class="tagImg">
+                    多学科医疗专家团队
+                </span>
+         
             </div>
             <div style="width:100%;height:.5rem;background: #E0E0E0;opacity: 0.3;margin-top: .4rem;"></div>
         </div>
@@ -46,6 +49,7 @@
 
         <van-tabs v-model="active" scrollspy sticky>
             <van-tab title="产品详情">
+                <p align="center"><img src="../public/images/news1.png" alt=""></p>
                 <img src="../public/images/step1.png" style="width: 100%;" alt="">
             </van-tab>
             <van-tab title="商家案例">

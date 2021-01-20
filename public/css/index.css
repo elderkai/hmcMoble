@@ -46,7 +46,7 @@
 } */
 
 .case-carousel img {
-    border-radius: .25rem;
+    border-radius: .50rem;
 }
 
 .layui-carousel-ind li {
@@ -162,36 +162,63 @@
 .chProduct {
     width: 8.4rem;
     height: 9.9rem;
-    background-image: url("../images/30.png");
+    background: url("../images/30.png"); 
     padding: .85rem .5rem;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
     border-radius: 8px;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: right;
 }
 
 .chProductImg2 {
-    background-image: url("../images/25.png");
+    background: url("../images/25.png");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: right;
 }
 
 .chProductImg3 {
-    background-image: url("../images/27.png");
+    background: url("../images/27.png");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: right;
 }
 
 .chProductImg4 {
-    background-image: url("../images/26.png");
+    background:  url("../images/26.png");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: right;
 }
 
 .chProductImg5 {
-    background-image: url("../images/12.png");
+    background:  url("../images/12.png");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: right;
 }
 
 .chProductImg6 {
-    background-image: url("../images/23.png");
+    background:  url("../images/23.png");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: right;
 }
 
 .chProductImg7 {
-    background-image: url("../images/29.png");
+    background: url("../images/29.png");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: right;
 }
 
 .ph-mt {

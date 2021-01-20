@@ -21,6 +21,7 @@
             <a href="../index.html">
                 <img style="width:.8rem;height:.8rem;" src="../public/images/icon_home.png" alt="">
             </a>
+            
         </div>
         <div class="tableSelect">
             <van-tabs swipe-threshold="4" v-model="active" scrollspy sticky>
@@ -32,11 +33,17 @@
                                 alt="">
                             <div class="right">
                                 <div class="title">私属医疗管家</div>
-                                <p> <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png"
-                                        alt="">专属护士 &nbsp; &nbsp; <img style="width: .7rem;height: .6rem;"
-                                        src="../public/images/icon_right.png" alt="">一对一专属私人医生 </p>
-                                <p style="margin-top: .45rem;"> <img style="width: .7rem;height: .6rem;"
-                                        src="../public/images/icon_right.png" alt="">多学科医疗专家团队</p>
+                                <span class="tagImg">
+                                    专属护士
+                                </span>
+                                <span class="tagImg">
+                                    专属护士
+                                </span>
+                            </br>
+                            <span style="margin-top: .45rem;" class="tagImg">
+                                多学科医疗专家团队
+                            </span>
+                              
                                 <a href="./productDetail.html">
                                     <div class="btn_detail">了解详情</div>
                                 </a>
@@ -47,11 +54,17 @@
                                 alt="">
                             <div class="right">
                                 <div class="title">员工援助计划</div>
-                                <p> <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png"
-                                        alt="">权威医院&nbsp; &nbsp; <img style="width: .7rem;height: .6rem;"
-                                        src="../public/images/icon_right.png" alt="">精密仪器 </p>
-                                <p style="margin-top: .45rem;"> <img style="width: .7rem;height: .6rem;"
-                                        src="../public/images/icon_right.png" alt="">多学科医疗专家团队</p>
+                                <span class="tagImg">
+                                    权威医院
+                                </span>
+                                <span class="tagImg">
+                                    精密仪器
+                                </span>
+                            </br>
+                            <span style="margin-top: .45rem;" class="tagImg">
+                                多学科医疗专家团队
+                            </span>
+
                                 <a href="./productDetail.html">
                                     <div class="btn_detail">了解详情</div>
                                 </a>
@@ -62,11 +75,17 @@
                                 alt="">
                             <div class="right">
                                 <div class="title">医疗健康服务</div>
-                                <p> <img style="width: .7rem;height: .6rem;" src="../public/images/icon_right.png"
-                                        alt="">专属护士 &nbsp; &nbsp; <img style="width: .7rem;height: .6rem;"
-                                        src="../public/images/icon_right.png" alt="">一对一专属私人医生 </p>
-                                <p style="margin-top: .45rem;"> <img style="width: .7rem;height: .6rem;"
-                                        src="../public/images/icon_right.png" alt="">多学科医疗专家团队</p>
+                                <span class="tagImg">
+                                    专属护士
+                                </span>
+                                <span class="tagImg">
+                                    一对一专属私人医生
+                                </span>
+                            </br>
+                            <span style="margin-top: .45rem;" class="tagImg">
+                                多学科医疗专家团队
+                            </span>
+                        
                                 <a href="./productDetail.html">
                                     <div class="btn_detail">了解详情</div>
                                 </a>
@@ -89,7 +108,19 @@
                 </van-tab>
             </van-tabs>
         </div>
+        <div style="padding:.6rem .8rem 0;width:100%;height:3.35rem;box-sizing: border-box;">
 
+            <van-pagination v-model="currentPage" :total-items="241" :items-per-page="10" show-page-size="8">
+                <template #prev-text>
+                    <!-- <van-icon name="arrow-left"  size=".6rem" /> -->
+                    <span class="pagIng">
+                        <上一页</span> </template> <template #next-text>
+                            <span class="pagIng">下一页></span>
+                            <!-- <van-icon name="arrow"  size=".6rem"/> -->
+                </template>
+
+            </van-pagination>
+        </div>
     </div>
 </body>
 <script src="../public/lib/vue/vue.min.js"></script>
@@ -103,6 +134,7 @@
         data() {
             return {
                 active: 0,
+                currentPage: 1,
             }
         },
         mounted() {},
